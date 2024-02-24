@@ -1,0 +1,127 @@
+/* responsive.css */
+/* 
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside, article {
+        margin: 10px 0;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        margin-left: auto;
+        width: 100%;
+        background: linear-gradient(135deg, #e94fae, #570e66);
+        padding: 10px;
+        
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .logo img {
+        margin-left: 0;
+    }
+    .nav a {
+        color: #fff;
+    }
+    .nav li {
+        margin: 10px 0;
+        margin-left: 10px;
+        color: white;
+    }
+
+    .menu-trigger {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2; /* Pastikan z-index cukup tinggi untuk menutupi elemen lain */
+    }
+    
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #c67bc9;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+    
+    /* Animasi untuk ikon hamburger saat di klik */
+    .menu-trigger.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .menu-trigger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-trigger.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    .main-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-content {
+        flex-direction: column;
+    }
+
+    .right-image img {
+        margin-left: 0; /* Menghapus margin kiri pada layar kecil */
+    }
+
+    .main-banner .row {
+        flex-direction: column; /* Ubah menjadi tata letak kolom di perangkat mobile */
+    }
+
+    .main-banner .col-lg-6 {
+        flex: 0 0 100%; /* Lebar 100% di perangkat mobile */
+        margin-bottom: 20px; /* Tambahkan ruang di antara elemen kolom di perangkat mobile */
+    }
+
+    .left-content {
+        margin-left: 0; /* Set margin kiri menjadi 0 di perangkat mobile */
+    }
+
+    .right-image img {
+        margin-left: 0; /* Set margin kiri menjadi 0 di perangkat mobile */
+    }
+
+    .left-content h2,
+    .left-content p,
+    .white-button {
+        margin-left: 0; /* Set margin kiri menjadi 0 di perangkat mobile */
+    }
+    .article-container {
+        display: block;
+    }
+
+    .article-section {
+        flex: 1 1 100%;
+    }
+    .product-list {
+        display: block;
+    }
+
+    .product-item {
+        flex: 0 0 100%; /* Full width on mobile */
+        margin-bottom: 20px;
+    }
+}
+
