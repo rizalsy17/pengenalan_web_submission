@@ -84,7 +84,7 @@ header {
 
 
 .main-banner {
-    background-color: none;
+    background-color: #fff;
     padding: 50px 0;
 
 }
@@ -282,6 +282,7 @@ header {
 
 .product-item h3 {
     font-size: 18px;
+    color: #555;
     margin-bottom: 10px;
 }
 
@@ -289,6 +290,7 @@ header {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 10px;
+    color: #777;
 }
 
 
